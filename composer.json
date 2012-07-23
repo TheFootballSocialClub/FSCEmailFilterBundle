@@ -21,6 +21,6 @@
     "autoload": {
         "psr-0": { "FSC\\EmailFilterBundle": "" }
     },
-    "target-dir": "FSC\\EmailFilterBundle",
+    "target-dir": "FSC/EmailFilterBundle",
     "minimum-stability": "dev"
 }
