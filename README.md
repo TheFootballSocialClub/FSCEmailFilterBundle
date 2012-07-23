@@ -10,18 +10,18 @@ The bulk of the documentation is stored in the Resources/doc/index.md.
 
 Add the following to your application's `config.yml`.
 
-`
+```
 fsc_standalone_email_filter:
     file: "%kernel.root_dir%/Resources/emails_filter.txt"
-`
+```
 
 And create your `app/Resources/emails_filter.txt` with the following format:
 
-`
+```
 you.can.ban.a.single.mail@gmail.com
 @yopmail.fr
 shitmailprovider.com
-`
+```
 
 ##License
 
