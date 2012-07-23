@@ -1,7 +1,7 @@
 {
-    "name": "fsc/EmailFilterBundle",
-    "description": "EmailFilterBundle Tests",
-    "keywords": ["symfony", "development", "bundle"],
+    "name": "fsc/email-filter-bundle",
+    "description": "A bundle with a validator to exclude mails of mails domain names.",
+    "keywords": ["symfony", "bundle", "email", "validator"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
