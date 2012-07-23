@@ -14,6 +14,6 @@ class Email extends Constraint
 
     public function validatedBy()
     {
-        return 'fsc.validator.email_filter';
+        return 'fsc.email_filter.validator';
     }
 }
