@@ -1,10 +1,10 @@
 <?php
 
-namespace FSC\Standalone\EmailFilterBundle;
+namespace FSC\EmailFilterBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class FSCStandaloneEmailFilterBundle extends Bundle
+class FSCEmailFilterBundle extends Bundle
 {
 
 }

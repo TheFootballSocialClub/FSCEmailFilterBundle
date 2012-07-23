@@ -1,9 +1,9 @@
 parameters:
-    fsc.validator.email_filter.class: FSC\Standalone\EmailFilterBundle\Validator\EmailValidator
+    fsc.email_filter.validator.class: FSC\EmailFilterBundle\Validator\EmailValidator
 
 services:
-    fsc.validator.email_filter:
-        class: %fsc.validator.email_filter.class%
-        arguments: [%fsc.validator.email_filter.file%]
+    fsc.email_filter.validator:
+        class: %fsc.email_filter.validator.class%
+        arguments: [%fsc.email_filter.validator.file%]
         tags:
-            - { name: validator.constraint_validator, alias: fsc.validator.email_filter }
+            - { name: validator.constraint_validator, alias: fsc.email_filter.validator }

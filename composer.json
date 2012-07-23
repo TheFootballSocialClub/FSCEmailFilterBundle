@@ -1,0 +1,26 @@
+{
+    "name": "fsc/EmailFilterBundle",
+    "description": "EmailFilterBundle Tests",
+    "keywords": ["symfony", "development", "bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Football Social Club",
+            "email": "contact@thefootballsocialclub.com",
+            "homepage": "http://thefootballsocialclub.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "symfony/framework-bundle": "2.*"
+    },
+    "require-dev": {
+        "symfony/yaml": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "FSC\\EmailFilterBundle": "" }
+    },
+    "target-dir": "FSC\\EmailFilterBundle",
+    "minimum-stability": "dev"
+}

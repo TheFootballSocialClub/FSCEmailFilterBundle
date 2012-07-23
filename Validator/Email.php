@@ -1,6 +1,6 @@
 <?php
 
-namespace FSC\Standalone\EmailFilterBundle\Validator;
+namespace FSC\EmailFilterBundle\Validator;
 
 use Symfony\Component\Validator\Constraint;
 
