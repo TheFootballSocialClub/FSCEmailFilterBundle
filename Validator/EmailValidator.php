@@ -15,16 +15,16 @@ class EmailValidator extends ConstraintValidator
      *
      * @param $file The file that contains the emails to filter.
      */
-    public function __construct($file)
+    public function __construct($file_path)
     {
-        if (!file_exists($file)) {
+        if (!file_exists($file_path)) {
             throw new \InvalidArgumentException('The file must exists.');
         }
 
-        $fileContent = file_get_contents($file);
+        $fileContent = file_get_contents($file_path);
 
+        preg_match_all('#(?:\s|$|^)@?([^\s@]+([.][^\s@]+)+)#s', $fileContent, $domainsMatches);
         preg_match_all('#([^\s]+(@)[^\s]+)\s#', $fileContent, $emailMatches);
-        preg_match_all('#(?:\s|$)@?([^\s@]+)\s#', $fileContent, $domainsMatches);
 
         $this->emails = $emailMatches[1];
         $this->domains = $domainsMatches[1];
