@@ -41,7 +41,7 @@ class EmailValidator extends ConstraintValidator
         }
 
         foreach ($this->emails as $email) {
-            if (0 === stripos($value, $email)) {
+            if (stripos($value, $email) === 0) {
                 $this->setMessage($constraint->emailMessage);
 
                 return false;
